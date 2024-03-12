@@ -1,6 +1,7 @@
 import requests
+import os
 
-API_KEY = "d41b00deaa6a9d93932bc01d64c8943b"
+API_KEY = os.getenv("WEATHER_API_KEY")
 
 
 def get_data(place, forcast_days=None):
